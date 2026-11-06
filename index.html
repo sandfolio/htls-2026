@@ -472,6 +472,14 @@ input,select,textarea,button{font-family:'Noto Sans',sans-serif}
 .ht-live-dropdown{position:absolute;right:18px;top:100%;display:grid;grid-template-columns:repeat(3,minmax(130px,1fr));gap:0 12px;padding:14px;background:white;border:1px solid #e5e8e9;box-shadow:0 8px 24px #0002;z-index:10;max-height:65vh;overflow-y:auto}.ht-live-dropdown>a{padding:10px;font-size:13px;font-weight:400;text-decoration:none;white-space:normal}.ht-live-dropdown>a:hover{background:#f5f8f9;color:#005d6b}.ht-secondary-more .ht-live-dropdown{grid-template-columns:1fr;min-width:190px}
 @media(max-width:1050px){.ht-live-masthead{grid-template-columns:1fr auto 1fr}.ht-live-brand img{width:255px}.ht-live-dateline{font-size:10px}.ht-live-left{gap:7px}.ht-l1,.ht-l2{gap:10px;font-size:12px}.ht-l1 .ht-nav-extra{display:none}.ht-live-actions>a{font-size:11px;padding:6px 9px}}
 @media(max-width:700px){.ht-site-header.ht-live-header{padding:12px 14px 0}.ht-live-masthead{grid-template-columns:auto 1fr auto;gap:10px;min-height:42px;margin-bottom:10px}.ht-live-brand{justify-self:center}.ht-live-brand img{width:230px}.ht-live-dateline{display:none}.ht-live-left{gap:5px}.ht-live-header .ht-menu summary svg,.ht-live-header .ht-search-toggle svg{width:19px;height:19px}.ht-live-actions .ht-live-epaper,.ht-live-actions>a:not(.ht-live-account){display:none}.ht-live-actions .ht-live-account{min-width:28px;min-height:30px}.ht-l1{flex-wrap:wrap;justify-content:flex-start;gap:0 20px;font-size:12px}.ht-l1>a,.ht-nav-more>summary{padding:10px 0}.ht-l1 .ht-nav-extra{display:none}.ht-nav-more{margin-left:auto;font-size:12px}.ht-l2{flex-wrap:wrap;justify-content:flex-start;gap:0 18px;font-size:11px}.ht-l2>a{padding:9px 0}.ht-live-dropdown{left:14px;right:14px;grid-template-columns:repeat(2,minmax(0,1fr))}.ht-secondary-more .ht-live-dropdown{left:auto}.ht-live-header .ht-menu nav{top:57px;left:14px}}
+
+/* Single-row mobile section navigation at 560px and below. */
+@media screen and (max-width:560px){
+ .summit-navigation{min-width:0;max-width:100%}
+ .summit-navigation .section-nav{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:0;width:100%;max-width:100%;min-height:60px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+ .summit-navigation .section-nav button{flex:0 0 auto;min-width:96px;white-space:nowrap;padding:20px 18px;font-size:12px;border-bottom:0;border-right:1px solid var(--line)}
+ .summit-navigation .section-nav button:last-child{border-right:0}
+}
 </style>
 </head>
 <body>
