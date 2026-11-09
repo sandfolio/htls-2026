@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>HT Leadership Summit 2026 | Hindustan Times</title>
 <meta name="description" content="The 24th Hindustan Times Leadership Summit. New Rules. New Realities. November 12–14, 2026, Taj Palace, New Delhi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -487,7 +487,7 @@ input,select,textarea,button{font-family:'Noto Sans',sans-serif}
 /* Summit branding leads the page, followed by the Modi banner. */
 .summit-top-branding{width:100%;background:#fff}.summit-top-branding-image{display:block;width:100%;height:auto;max-width:100%;position:static}
 
-/* Compact mobile About and swipeable editorial cards at 360px and below. */
+/* Mobile About and swipeable editorial cards across phone widths. */
 .about-read-toggle{display:none}
 .news-mobile-controls{display:none}
 @media screen and (max-width:560px){
@@ -495,7 +495,7 @@ input,select,textarea,button{font-family:'Noto Sans',sans-serif}
  .videos-heading,.news-heading{flex-wrap:wrap;gap:18px}.ht-live-brand{min-width:0}.ht-live-brand img{width:100%;max-width:230px}
  .combined-partner-tier,.combined-partner-group{min-width:0}.session-content{min-width:0}
 }
-@media screen and (max-width:360px){
+@media screen and (max-width:767px){
  .about,.speakers-section,.schedule-section,.videos-section,.news-section,.partners-section{padding-left:16px;padding-right:16px}
  .about-read-toggle{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;margin:-8px 0 16px;border:0;background:none;color:#005d6b;font:600 14px/1.5 'Noto Sans',sans-serif;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
  .about-more-copy:not(.is-expanded){display:none}
@@ -507,6 +507,27 @@ input,select,textarea,button{font-family:'Noto Sans',sans-serif}
  .video-controls{gap:12px}.video-controls button{min-height:44px}.news-card .news-read-more{opacity:1;visibility:visible}
  .about-heading h2,.speakers-heading h2,.schedule-heading h2,.videos-heading h2,.news-heading h2,.partners-heading h2{font-size:32px;overflow-wrap:anywhere}
  .day-tabs button span{font-size:15px}.ht-live-actions .ht-live-account{min-width:28px}.ht-live-left{gap:0}
+}
+
+/* Phone layout, including modern 375–430px browsers and landscape widths. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}img{max-width:100%}
+@media screen and (max-width:767px){
+ .page{width:100%;max-width:100%;min-width:0}.page>main{width:100%;min-width:0}
+ .about,.speakers-section,.schedule-section,.videos-section,.news-section,.partners-section{padding-left:16px;padding-right:16px;min-width:0}
+ .summit-navigation{width:100%;min-width:0;max-width:100%}.summit-navigation .section-nav{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:0;min-height:56px;width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+ .summit-navigation .section-nav button{flex:0 0 auto;min-width:96px;padding:18px 16px;white-space:nowrap;border-bottom:0;border-right:1px solid var(--line)}.summit-navigation .section-nav button:last-child{border-right:0}
+ .speakers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.speakers-grid .speaker{min-width:0;padding:14px 10px}.speaker h3{font-size:18px;line-height:1.3;margin:14px 0 8px;overflow-wrap:anywhere}.speaker p{font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+ .about .prose .about-intro{font-size:19px;line-height:1.55}.about .prose p:not(.about-intro){font-size:16px;line-height:1.65}
+ .videos-heading,.news-heading{display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px}.video-controls,.news-mobile-controls{flex:0 0 100%;justify-content:space-between}.video-controls button,.news-mobile-controls button{min-height:44px}
+ .schedule-panel{padding:20px 0 0}.day-tabs{gap:0}.day-tabs button{flex:1;min-width:0;padding:14px 8px}.day-tabs button span{font-size:16px}.day-tabs small{font-size:11px}
+ .session{display:grid;grid-template-columns:56px minmax(0,1fr);gap:6px 12px;padding:18px 0}.session-time{grid-column:2;grid-row:1;white-space:normal;font-size:11px}.session-content{grid-column:2;grid-row:2;min-width:0;padding:0;border:0}.session-portraits{grid-column:1;grid-row:1/3;padding:0}.session-person h4{font-size:17px}.session-people{display:block}.session-person+.session-person{border-left:0;border-top:1px solid #e5e5e5;padding:10px 0 0;margin-top:10px}
+ .session.session-paired .session-time,.session.session-paired .session-content{grid-column:1/-1}.session-host{font-size:12px;line-height:1.5}
+ .partners-reference .combined-partner-tier{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}.partners-reference .combined-partner-group{min-width:0;padding:18px 8px}.partners-reference .combined-partner-group:last-child{grid-column:1/-1;border-left:0;border-top:1px dotted #e9ecee}.partners-reference .partner-state-boxes{grid-template-columns:repeat(3,minmax(0,1fr));width:100%;max-width:330px}.partners-reference .partner-state-boxes .partner-logo{min-width:0;width:100%;max-width:110px}.partners-reference .partner-state-boxes .partner-logo img{width:80px;height:80px;max-width:85%}
+ .partners-reference .partner-grid{width:100%;grid-template-columns:repeat(3,minmax(0,1fr))}.partners-reference .partner-grid .partner-logo{width:100%;height:auto;aspect-ratio:1;min-width:0}.partners-reference .partner-grid .partner-logo img{width:80%;height:80%;object-fit:contain}
+ .ht-live-masthead{grid-template-columns:auto minmax(0,1fr) auto;gap:8px;min-height:44px;margin-bottom:10px}.ht-live-brand{min-width:0;justify-self:center}.ht-live-brand img{width:100%;max-width:240px}.ht-live-dateline{display:none}.ht-live-left{gap:3px}.ht-live-actions>a:not(.ht-live-account){display:none}
+ .ht-l1{flex-wrap:wrap;justify-content:flex-start;gap:0 18px;font-size:12px}.ht-l1 .ht-nav-extra{display:none}.ht-l1>a,.ht-nav-more>summary{padding:10px 0}.ht-nav-more{margin-left:auto}.ht-l2{flex-wrap:wrap;justify-content:flex-start;gap:0 16px;font-size:11px}.ht-live-dropdown{left:14px;right:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+ :is(#speaker-dialog,#partner-dialog){width:calc(100% - 24px);max-height:88dvh}.speaker-modal-header{padding:54px 22px 20px}.speaker-modal-header h2{font-size:22px}.speaker-modal-body{padding:22px}.speaker-modal-body p{font-size:16px;line-height:1.7}
+ .footer{padding:18px 16px;display:flex;flex-wrap:wrap;gap:8px;line-height:1.5}
 }
 </style>
 </head>
@@ -591,7 +612,7 @@ previousVideo.addEventListener('click',()=>navigateVideo(-1));nextVideo.addEvent
 </script>
 <script>
 (()=>{
- const narrow=matchMedia('(max-width:360px)'),toggle=document.getElementById('about-read-toggle'),copy=document.getElementById('about-more-copy');
+ const narrow=matchMedia('(max-width:767px)'),toggle=document.getElementById('about-read-toggle'),copy=document.getElementById('about-more-copy');
  function setAbout(expanded){copy.classList.toggle('is-expanded',expanded);toggle.setAttribute('aria-expanded',String(expanded));toggle.textContent=expanded?'Read less':'Read more'}
  toggle.addEventListener('click',()=>setAbout(toggle.getAttribute('aria-expanded')!=='true'));
  function resizeAbout(){setAbout(!narrow.matches)}narrow.addEventListener('change',resizeAbout);resizeAbout();
